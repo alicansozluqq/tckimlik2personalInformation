@@ -6,7 +6,7 @@ def turkish_id_no_check(tc_no):
 
     Return the validation of Turkish Identification Number
 
-    >>> turkish_id_no_check(98768109974)
+    >>> turkish_id_no_check(41221292294)
     True
     '''
 
