@@ -6,11 +6,11 @@ def turkish_id_no_check(tc_no):
 
     Return the validation of Turkish Identification Number
 
-    >>> turkish_id_no_check(98768109974)
+    >>> turkish_id_no_check(41221292294)
     True
     '''
 
-    list_tc = map(int,str(tc_no))
+    list_tc = map(int,str(41221292294))
     tc10 = (sum(list_tc[0:10:2])*7 - sum(list_tc[1:9:2])) % 10
     tc11 = (sum(list_tc[0:9]) + tc10) % 10
     return True if list_tc[9] == tc10 and list_tc[10] == tc11 else False
